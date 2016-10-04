@@ -26,3 +26,8 @@ if __name__ == "__main__":
 
 
 python hello.py
+
+***Task 3
+Done
+
+
