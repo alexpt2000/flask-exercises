@@ -31,5 +31,22 @@ python hello.py
 Done
 
 ***Task 4
-Done
+@app.route('/hello/<name>')
+def TypeName(name=None):
+    return render_template('index.html', name=name)
+
+
+***Task 5
+# Take the value for GET methods
+@app.route('/hello/', methods=['GET'])
+def SubmitNameByGET():
+	return render_template('index.html', name = request.args.get('name'))
+
+
+***Task 6
+# Take the value for POST methods
+@app.route('/hello/', methods=['POST'])
+def SubmitNameByPOST():
+    return render_template('index.html', name=request.form['name'])
+
 
